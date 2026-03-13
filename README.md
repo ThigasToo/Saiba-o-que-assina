@@ -32,7 +32,9 @@ Por isso, **a primeiríssima análise do dia pode demorar de 30 a 50 segundos** 
 ## Política de Privacidade
 
 Política de Privacidade - Extensão "Saiba o que Assina"
+
 Última atualização: 12/03/2026
+
 A sua privacidade é levada a sério. Esta Política de Privacidade descreve como a extensão "Saiba o que Assina" coleta, usa e protege as suas informações. Nós construímos esta ferramenta justamente para aumentar a transparência na internet, portanto, nossas próprias práticas devem ser o mais transparentes possível.
 
 1. Quais dados nós coletamos? Para que a extensão funcione, nós coletamos exclusivamente o endereço principal (URL/Domínio) do site que você está visitando no momento em que a extensão entra em ação (por exemplo, "netflix.com" ou "facebook.com").
