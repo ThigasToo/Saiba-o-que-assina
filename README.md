@@ -44,13 +44,23 @@ The assistant will automatically analyze the page and display:
 
 ---
 
+## 🌐 Live API (Recommended)
+
+The backend is already deployed and running in production.
+
+👉 No setup required — the extension works out of the box.
+
+If you prefer, you can still run the backend locally by following the instructions below.
+
+---
+
 ## 🛠️ Backend Setup
 
 This project uses a Node.js backend to process privacy analysis using AI.
 
 ### 1. Navigate to the backend folder
 ```bash
-cd saiba-backend
+cd /backend
 ```
 
 ### 2. Install dependencies
@@ -59,7 +69,7 @@ npm install
 ```
 
 ### 3. Create your `.env` file
-```bash
+```env
 OPENAI_API_KEY=your_api_key_here
 PORT=3000
 ```
