@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Saiba o que Assina - Privacidade com IA",
+  "name": "Know What You Sign — AI-Powered Privacy Assistant",
   "version": "1.0.0",
-  "description": "Analisa automaticamente os Termos de Uso e Políticas de Privacidade dos sites usando Inteligência Artificial.",
+  "description": "Your intelligent assistant that reads and summarizes Terms of Service and Privacy Policies in seconds!",
   "icons": {
     "16": "icon16.png",
     "32": "icon32.png",
