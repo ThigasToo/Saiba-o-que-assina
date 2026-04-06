@@ -44,6 +44,36 @@ The assistant will automatically analyze the page and display:
 
 ---
 
+## 🛠️ Backend Setup
+
+This project uses a Node.js backend to process privacy analysis using AI.
+
+### 1. Navigate to the backend folder
+```bash
+cd saiba-backend
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Create your `.env` file
+```bash
+OPENAI_API_KEY=your_api_key_here
+PORT=3000
+```
+
+### 4. Run the server
+```bash
+node server.js
+```
+
+The backend will be available at:
+[http://localhost:3000](http://localhost:3000)
+
+---
+
 ## ⚠️ Important Notice (First Load May Be Slower)
 
 The AI "brain" runs on a cloud server to keep your computer lightweight.
