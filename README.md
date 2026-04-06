@@ -1,56 +1,118 @@
-# ⚖️ Saiba o que Assina - Privacidade com IA
+# ⚖️ Know What You Sign — AI-Powered Privacy Assistant
 
-O seu assistente inteligente que lê e resume Termos de Uso e Políticas de Privacidade em segundos!
+Your intelligent assistant that reads and summarizes Terms of Service and Privacy Policies in seconds!
 
-*(A extensão está atualmente em processo de aprovação na Chrome Web Store. Enquanto isso, você pode instalá-la manualmente no seu navegador seguindo os passos rápidos abaixo!)*
-
-## 🚀 Como instalar o nosso "Robozinho" no seu Chrome
-
-Como a extensão ainda não está na loja oficial, você pode instalá-la ativando o "Modo Desenvolvedor" do Google Chrome. É 100% seguro e leva menos de 1 minuto!
-
-### Passo a Passo da Instalação:
-
-1. **Baixe a Extensão:** Faça o download do arquivo `.zip` da extensão e extraia (descompacte) a pasta em algum lugar fácil de achar no seu computador (como a Área de Trabalho).
-2. **Acesse as Extensões:** Abra o seu Google Chrome, digite `chrome://extensions/` na barra de endereços (onde você digita os sites) e aperte Enter.
-3. **Ative o Modo Desenvolvedor:** No canto superior direito dessa tela, ative a chavinha que diz **"Modo do desenvolvedor"** (Developer mode).
-4. **Suba os Arquivos:** Note que apareceram novos botões no canto superior esquerdo. Clique em **"Carregar sem compactação"** (Load unpacked).
-5. **Selecione a Pasta:** Encontre a pasta que você descompactou no Passo 1 e selecione ela. *(Dica: certifique-se de selecionar a pasta que tem o arquivo chamado `manifest.json` dentro).*
-
-Pronto! 🎉 O ícone da extensão vai aparecer na sua barra do navegador e ela já está funcionando.
-
-## 💡 Como usar
-Basta navegar pela internet! Acesse sites conhecidos (Netflix, Instagram, ChatGPT) e aguarde alguns segundos. O robozinho vai analisar a página automaticamente e injetar um alerta na sua tela com a Nota de Privacidade do site e os pontos mais críticos que você precisa saber.
+✅ **Now available on the Chrome Web Store!**  
+Install it directly and start browsing with more transparency and awareness.
 
 ---
 
-### ⚠️ Aviso Importante (A primeira vez demora um pouquinho!)
-O "cérebro" da nossa IA fica hospedado em um servidor gratuito na nuvem para não pesar no seu computador. Se ninguém usar a extensão por alguns minutos, o servidor "dorme" para economizar energia. 
+## 🚀 How to Install
 
-Por isso, **a primeiríssima análise do dia pode demorar de 30 a 50 segundos** para carregar enquanto o servidor "acorda". Seja paciente! Depois que ele acordar, as próximas análises em outros sites serão quase instantâneas.
+### Option 1: Install from Chrome Web Store (Recommended)
+1. Go to the Chrome Web Store page of the extension.
+2. Click **"Add to Chrome"**.
+3. Confirm the installation.
 
+That’s it! 🎉 The extension will be ready to use instantly.
 
-## Política de Privacidade
+---
 
-Política de Privacidade - Extensão "Saiba o que Assina"
+### Option 2: Manual Installation (Developer Mode)
 
-Última atualização: 12/03/2026
+If you prefer, you can still install it manually:
 
-A sua privacidade é levada a sério. Esta Política de Privacidade descreve como a extensão "Saiba o que Assina" coleta, usa e protege as suas informações. Nós construímos esta ferramenta justamente para aumentar a transparência na internet, portanto, nossas próprias práticas devem ser o mais transparentes possível.
+1. **Download the Extension:** Download the `.zip` file and extract it somewhere easy to find (e.g., Desktop).
+2. **Open Extensions Page:** In Chrome, go to `chrome://extensions/`.
+3. **Enable Developer Mode:** Toggle **"Developer mode"** in the top-right corner.
+4. **Load the Extension:** Click **"Load unpacked"**.
+5. **Select Folder:** Choose the extracted folder *(make sure it contains the `manifest.json` file)*.
 
-1. Quais dados nós coletamos? Para que a extensão funcione, nós coletamos exclusivamente o endereço principal (URL/Domínio) do site que você está visitando no momento em que a extensão entra em ação (por exemplo, "netflix.com" ou "facebook.com").
-  Não coletamos dados pessoais (como nome, e-mail, senhas).
-  Não rastreamos seu histórico de navegação contínuo.
-  Não usamos cookies de rastreamento de terceiros.
+Done! 🎉 The extension icon will appear in your browser.
 
-2. Como usamos os seus dados? O domínio do site capturado é enviado de forma segura para o nosso servidor na nuvem com um único propósito:
-Consultar bases de dados públicas de privacidade (como o ToS;DR) e nossa Inteligência Artificial para gerar o "score" (nota) e o resumo dos Termos de Uso daquele site específico.
+---
 
-3. Compartilhamento de Dados com Terceiros Para gerar os resumos inteligentes, o domínio do site pesquisado e os trechos de seus Termos de Uso públicos são processados através da API da OpenAI (GPT). Nenhuma informação pessoal sua é enviada para a OpenAI ou para qualquer outra empresa. Nós nunca venderemos, alugaremos ou comercializaremos qualquer tipo de dado de nossos usuários.
-  
-4. Armazenamento e Retenção de Dados: Os resultados das análises (o "Score" e os "Alertas") ficam salvos em um cache temporário no nosso servidor para que as próximas consultas ao mesmo site sejam mais rápidas. Nenhuma informação sobre quem fez a busca fica armazenada. Nós não possuímos banco de dados atrelado a perfis de usuários.
+## 💡 How to Use
 
-5. Permissões Solicitadas: A extensão solicita permissões de leitura de páginas da web (activeTab / <all_urls>) estritamente para conseguir identificar em qual site você está navegando e injetar o escudo de aviso legal na sua tela.
+Just browse the internet normally!
 
-6. Contato Se você tiver dúvidas sobre esta Política de Privacidade ou sobre o funcionamento da ferramenta, entre em contato com o desenvolvedor através do e-mail: tcms2014@hotmail.com.
+Visit popular websites (Netflix, Instagram, ChatGPT, etc.) and wait a few seconds.  
+The assistant will automatically analyze the page and display:
 
+- A **Privacy Score**
+- Key **warnings and critical points** you should know
 
+---
+
+## ⚠️ Important Notice (First Load May Be Slower)
+
+The AI "brain" runs on a cloud server to keep your computer lightweight.
+
+If the extension hasn’t been used for a while, the server may "sleep" to save resources.
+
+👉 Because of that, the **first analysis of the day may take 30–50 seconds** while the server wakes up.  
+After that, all analyses will be almost instant.
+
+---
+
+## 🔒 Privacy Policy
+
+**Privacy Policy — "Know What You Sign" Extension**  
+Last updated: April 6, 2026
+
+Your privacy is taken seriously. This Privacy Policy explains how the extension collects, uses, and protects your data. Since our mission is to improve transparency on the internet, our own practices are designed to be as transparent as possible.
+
+---
+
+### 1. What data do we collect?
+
+To function properly, the extension collects **only the main domain (URL)** of the website you are currently visiting (e.g., "netflix.com", "facebook.com").
+
+We do **NOT**:
+- Collect personal data (name, email, passwords)
+- Track your browsing history
+- Use third-party tracking cookies
+
+---
+
+### 2. How do we use your data?
+
+The captured domain is securely sent to our cloud server for a single purpose:
+
+- Query public privacy databases (such as ToS;DR)
+- Use AI to generate a **privacy score and summary** for that specific website
+
+---
+
+### 3. Third-Party Data Sharing
+
+To generate intelligent summaries, the domain and publicly available Terms of Service excerpts are processed via the **OpenAI (GPT) API**.
+
+- No personal data is sent to OpenAI or any third party  
+- We **never sell, rent, or trade user data**
+
+---
+
+### 4. Data Storage and Retention
+
+Analysis results (scores and alerts) are temporarily cached on our server to improve performance.
+
+- No user identity is stored  
+- No user profiles or tracking databases exist
+
+---
+
+### 5. Permissions Requested
+
+The extension requests permissions (`activeTab` / `<all_urls>`) strictly to:
+
+- Identify the current website
+- Display the privacy alert overlay
+
+---
+
+### 6. Contact
+
+If you have any questions about this Privacy Policy or the extension, contact:
+
+📧 **tcms2014@hotmail.com**
