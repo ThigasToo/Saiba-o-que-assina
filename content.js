@@ -1,6 +1,6 @@
-console.log("Extensão 'Saiba o que Assina' - Radar Minucioso Ativado!");
+console.log("'Know What You Sign' Extension - Deep Radar Activated!");
 
-// Limpa o domínio (ex: pt-br.facebook.com vira facebook.com)
+// Cleans the domain (e.g., pt-br.facebook.com becomes facebook.com)
 let dominioAtual = window.location.hostname;
 const partesDominio = dominioAtual.split('.');
 if (partesDominio[partesDominio.length - 1] === 'br' && partesDominio.length > 3) {
@@ -9,7 +9,7 @@ if (partesDominio[partesDominio.length - 1] === 'br' && partesDominio.length > 3
     dominioAtual = partesDominio.slice(-2).join('.'); 
 }
 
-// 1. ESTRUTURA DO MODAL CENTRALIZADO (Mantido o design aprovado)
+// 1. CENTRALIZED MODAL STRUCTURE (Approved design maintained)
 const modalAviso = document.createElement('div');
 modalAviso.style.display = "none";
 modalAviso.style.position = "fixed";
@@ -18,15 +18,15 @@ modalAviso.style.left = "50%";
 modalAviso.style.transform = "translate(-50%, -50%)";
 modalAviso.style.backgroundColor = "#ffffff";
 modalAviso.style.color = "#333333";
-modalAviso.style.padding = "24px"; // Um respiro um pouco maior
+modalAviso.style.padding = "24px"; // Slightly larger breathing room
 modalAviso.style.borderRadius = "16px";
 modalAviso.style.zIndex = "2147483647";
 
-// 👇 AS 4 LINHAS MÁGICAS PARA TEXTOS GRANDES 👇
-modalAviso.style.width = "420px"; // Deixei mais largo para caber as explicações da IA
-modalAviso.style.maxWidth = "90vw"; // Se a tela for pequena, ele encolhe
-modalAviso.style.maxHeight = "80vh"; // Nunca vai ser maior que 80% da tela
-modalAviso.style.overflowY = "auto"; // Se o texto passar de 80%, cria um scroll automático!
+// 👇 THE 4 MAGIC LINES FOR LARGE TEXTS 👇
+modalAviso.style.width = "420px"; // Wider to fit AI explanations
+modalAviso.style.maxWidth = "90vw"; // Shrinks on smaller screens
+modalAviso.style.maxHeight = "80vh"; // Never taller than 80% of the screen
+modalAviso.style.overflowY = "auto"; // Adds automatic scroll if text exceeds 80%!
 
 modalAviso.style.boxShadow = "0px 20px 40px rgba(0,0,0,0.2)";
 modalAviso.style.fontFamily = "-apple-system, BlinkMacSystemFont, Roboto, sans-serif";
@@ -53,15 +53,15 @@ const fecharModal = () => {
 overlay.addEventListener('click', fecharModal);
 
 // ==========================================
-// O ESCUDO GLOBAL FLUTUANTE
+// THE FLOATING GLOBAL SHIELD
 // ==========================================
 const escudoGlobal = document.createElement('div');
 escudoGlobal.innerHTML = '🛡️';
-escudoGlobal.title = "Analisar Privacidade deste site";
+escudoGlobal.title = "Analyze this site's Privacy";
 escudoGlobal.style.position = "fixed";
-escudoGlobal.style.top = "40px"; // Distância do topo
-escudoGlobal.style.right = "20px"; // Distância da direita
-escudoGlobal.style.zIndex = "9999999"; // Por cima de absolutamente tudo
+escudoGlobal.style.top = "40px"; // Distance from top
+escudoGlobal.style.right = "20px"; // Distance from right
+escudoGlobal.style.zIndex = "9999999"; // On top of absolutely everything
 escudoGlobal.style.cursor = "pointer";
 escudoGlobal.style.fontSize = "16px";
 escudoGlobal.style.backgroundColor = "#ffffff";
@@ -74,7 +74,7 @@ escudoGlobal.style.justifyContent = "center";
 escudoGlobal.style.boxShadow = "0px 4px 12px rgba(0,0,0,0.15)";
 escudoGlobal.style.transition = "transform 0.2s, box-shadow 0.2s";
 
-// Efeito de hover (passar o mouse)
+// Hover effect (mouse over)
 escudoGlobal.onmouseover = () => {
     escudoGlobal.style.transform = "scale(1.1)";
     escudoGlobal.style.boxShadow = "0px 6px 16px rgba(0,0,0,0.2)";
@@ -86,14 +86,14 @@ escudoGlobal.onmouseout = () => {
 
 document.body.appendChild(escudoGlobal);
 
-// O que acontece ao clicar no escudo global:
+// What happens when clicking the global shield:
 escudoGlobal.addEventListener('click', () => {
-    // Mostra o modal de carregamento que já existe no seu código
+    // Shows the loading modal that already exists in your code
     overlay.style.display = "block";
     modalAviso.style.display = "block";
-    modalAviso.innerHTML = `<div style="text-align: center; padding: 20px;">⏳<br><b>Analisando contrato global...</b></div>`;
+    modalAviso.innerHTML = `<div style="text-align: center; padding: 20px;">⏳<br><b>Analyzing global contract...</b></div>`;
     
-    // Faz a mesma requisição para o nosso backend
+    // Makes the exact same request to our backend
     fetch(`https://api-termos-privacidade.onrender.com/analisar?site=${dominioAtual}`)
         .then(resposta => resposta.json())
         .then(dados => {
@@ -103,28 +103,28 @@ escudoGlobal.addEventListener('click', () => {
 
             modalAviso.innerHTML = `
                 <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eaeaea; padding-bottom: 12px; margin-bottom: 16px;">
-                    <b style="color: #111; font-size: 16px;">${iconeRisco} Privacidade: ${dominioAtual}</b>
+                    <b style="color: #111; font-size: 16px;">${iconeRisco} Privacy: ${dominioAtual}</b>
                     <span style="background-color: ${corRisco}20; color: ${corRisco}; padding: 6px 10px; border-radius: 8px; font-weight: bold;">Score ${dados.score}</span>
                 </div>
                 <ul style="padding-left: 20px; font-bold; margin: 10; color: #000000; font-size: 15px;">${listaAlertas}</ul>
                 <div style="margin-top: 20px; padding-top: 12px; border-top: 1px solid #eaeaea; font-size: 11px; color: #888; text-align: justify; line-height: 1.4;">
-                    <b style="color: #555;">Fonte da Análise: ${dados.fonte || "Indisponível"}</b><br><br>
-                    <b>Aviso Legal:</b> Os scores e alertas desta ferramenta possuem caráter estritamente informativo e não substituem o aconselhamento de um profissional jurídico. Leia sempre os termos oficiais do site.
+                    <b style="color: #555;">Analysis Source: ${dados.fonte || "Unavailable"}</b><br><br>
+                    <b>Disclaimer:</b> The scores and alerts provided by this tool are strictly informational and do not substitute professional legal advice. Always read the site's official terms.
                 </div>
                 <div style="margin-top: 16px; text-align: right;">
-                    <button id="btnFecharSaibaGlobal" style="background-color: #f1f1f1; border: none; padding: 8px 16px; border-radius: 8px; cursor: pointer; font-weight: bold; color: #333;">Entendi</button>
+                    <button id="btnFecharSaibaGlobal" style="background-color: #f1f1f1; border: none; padding: 8px 16px; border-radius: 8px; cursor: pointer; font-weight: bold; color: #333;">Understood</button>
                 </div>
             `;
             document.getElementById('btnFecharSaibaGlobal').addEventListener('click', fecharModal);
         })
         .catch(erro => {
-            modalAviso.innerHTML = `<div style="color: #e74c3c; text-align: center; padding: 20px;"><b>❌ Erro de Conexão com o Servidor</b></div>`;
+            modalAviso.innerHTML = `<div style="color: #e74c3c; text-align: center; padding: 20px;"><b>❌ Server Connection Error</b></div>`;
         });
 });
 
-// 3. EXECUÇÃO INTELIGENTE DO RADAR
-rastrearContratos(); // Roda imediatamente ao abrir a página
+// 3. SMART RADAR EXECUTION
+rastrearContratos(); // Runs immediately upon opening the page
 
-// Roda novamente após 2 e 5 segundos para pegar sites lentos (como o rodapé do Spotify)
+// Runs again after 2 and 5 seconds to catch slow-loading sites (like Spotify's footer)
 setTimeout(rastrearContratos, 2000);
 setTimeout(rastrearContratos, 5000);
